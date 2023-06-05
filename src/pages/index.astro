@@ -3,10 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Electric Cars, Solar & Clean Energy | Tesla">
 	<main>
 		<header 
-			class="py-6 px-10 flex items-center fixed top-0 w-full justify-between">
+			class="py-6 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
 			<div class="flex flex-grow basis-0">
 				<svg 	class="h-6 w-32" 
 						viewBox="0 0 342 35"
@@ -36,6 +36,34 @@ import Card from '../components/Card.astro';
 			</nav>
 			
 		</header>
+
+		<section class="bg-black h-screen w-screen text-center relative overflow-hidden">
+			<div class="z-30 relative h-full flex flex-col">
+				<header>
+					<h2 class="text-white pt-40 text-[40px] font-medium">
+						Experience Tesla
+					</h2>
+					<p class="text-white text-sm">
+						Schedule a Demo Drive Today
+					</p>
+				</header>
+				<footer class="flex flex-grow justify-end flex-col pb-24">
+					<div>
+						<a class=" border-[3px] text-sm rounded font-medium px-[90px] py-[8px] inline-block text-white" href="#">
+							Demo Drive
+						</a>
+					</div>
+				</footer>
+			</div>
+			<div class="absolute top-0 bottom-0 h-full w-full z-10">
+				<video  
+				class="object-center object-cover" 
+				autoplay 
+				muted 
+				loop
+				src="/video/Homepage-Test_Drive-NA-Desktop.webm"></video>
+			</div>
+		</section>
 	</main>
 </Layout>
 
